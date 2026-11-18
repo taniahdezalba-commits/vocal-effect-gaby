@@ -1,0 +1,28 @@
+VOCAL EFFECT GABY - Cómo instalarlo en tu Mac
+=============================================
+
+1. Abre la app "Terminal" (Cmd + Espacio, escribe Terminal, Enter).
+
+2. Pega este comando y presiona Enter (busca el plugin en Descargas,
+   lo copia a tu carpeta de plugins y le quita el bloqueo de Mac):
+
+cd ~/Downloads && V="$(find . -maxdepth 5 -name 'Vocal Effect Gaby.vst3' | head -1)" && echo "Encontré: $V" && sudo mkdir -p /Library/Audio/Plug-Ins/VST3 && sudo cp -R "$V" /Library/Audio/Plug-Ins/VST3/ && sudo xattr -dr com.apple.quarantine "/Library/Audio/Plug-Ins/VST3/Vocal Effect Gaby.vst3" && echo "✅ LISTO - Vocal Effect Gaby instalado"
+
+3. Escribe la contraseña de tu Mac (no se ve al escribir) y Enter.
+
+4. Reinicia ACE Studio. En la pista de voz: FX -> Insertar -> Gaby Records
+   -> Vocal Effect Gaby.
+
+CÓMO USARLO
+-----------
+- CLARIDAD: gira hasta que el ruido desaparezca (60 % es un buen inicio).
+- AMBIENTE: devuelve un poco de las reflexiones del cuarto para que suene natural.
+- COMPUERTA: baja todavía más el ruido entre frases, cuando no cantas.
+- MULTIBANDA: más o menos limpieza en Graves, Medios, Presencia y Aire.
+  (100 % = normal, 0 % = no limpia esa zona, 200 % = limpia el doble).
+- Modo VOZ = limpia la voz. Modo AMBIENTE = quita la voz y deja solo el ruido/ambiente.
+- La pantalla muestra la entrada (cian), la voz limpia (morado) y el ruido detectado (punteado).
+- El plugin escucha unos segundos para aprender el ruido; funciona mejor si
+  hay un poquito de silencio al inicio.
+
+Gaby Records - gabyrecords.com
